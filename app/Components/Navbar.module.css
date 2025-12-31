@@ -1,0 +1,136 @@
+/* BASE NAVBAR */
+.saaslandNavbar {
+  height: 90px;
+  background: transparent;
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+  background: none;
+  border-radius: 8px;
+  width: 140px;
+  height: 700px;
+  padding: 3px 20px;
+
+}
+
+.logoText {
+  color: #000000;
+}
+
+.logoWrap {
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+/* Logo image highlight */
+.logoWrap img {
+  filter: drop-shadow(0 2px 6px rgba(223, 222, 222, 0.923));
+}
+
+/* LINKS */
+.navLink {
+  color: #000000 !important;
+  font-weight: 400;
+  text-decoration: none;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+  font-size: 35px;
+}
+
+
+.navLink:hover {
+  color: #2F2F2F !important;
+}
+
+/* SCROLL STATE */
+.scrolled {
+  background: #ffffff !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* 🔥 TEXT BLACK ON SCROLL */
+.scrolled .navLink {
+  color: #000000 !important;
+}
+
+.scrolled .logoWrap {
+  background: #ffffff;
+}
+
+/* MOBILE MENU */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #5f2eea;
+    padding: 20px;
+    border-radius: 14px;
+    margin-top: 12px;
+  }
+
+  .navLink {
+    color: #ffffff !important;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 360px) {
+  .logo {
+    height: 42px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .saaslandNavbar {
+    height: auto;
+    padding: 10px 0;
+  }
+}
+
+/* 4K SCREENS */
+@media (min-width: 1920px) {
+  .saaslandNavbar {
+    height: 110px;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .navLink {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #6a3df0;
+    padding: 20px;
+    border-radius: 14px;
+    margin-top: 12px;
+  }
+
+  .navLink {
+    color: #ffffff !important;
+    text-align: center;
+  }
+
+  .scrolled .navLink {
+    color: #ffffff !important;
+  }
+}
