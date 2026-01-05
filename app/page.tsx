@@ -8,61 +8,47 @@ export default function Home() {
       {/* <Navbar /> */}
 
       {/* {Hero sectio} */}
-      <section className="hero-section">
+      <section className="hero-curve">
+        <div className="hero-glow"></div>
 
-        {/* Text + Stats */}
-        <div className="hero-content container text-center">
-          <h1 className="saasland-hero-title">
-            Timesheet Management Software <br />
-            for UAE Businesses
-          </h1>
+        <div className="hero-wrap">
 
-          <p className="saasland-hero-desc mt-3">
-            Track Time. Boost Productivity. Simplify Payroll.
-            <br />
-            Smart, accurate and automated timesheet management
-            designed for UAE companies.
-          </p>
-
-          {/* STATS */}
-          <div className="row justify-content-center mt-5 saasland-stats fw-bolder">
-            <div className="col-6 col-md-3">
-              <h2 className="saasland-hero-title">99.9%</h2>
-              <p>Uptime</p>
-            </div>
-            <div className="col-6 col-md-3">
-              < h2 className="saasland-hero-title">100%</h2>
-              <p>Accurate Tracking</p>
-            </div>
-            <div className="col-6 col-md-3">
-              <h2 className="saasland-hero-title">8+</h2>
-              <p>Industries</p>
-            </div>
-            <div className="col-6 col-md-3">
-              <h2 className="saasland-hero-title">UAE</h2>
-              <p>Labour Law Ready</p>
-            </div>
+          {/* LEFT FEATURES */}
+          <div className="curve left">
+            <span>Smart Time Tracking</span>
+            <span>Project Timesheets</span>
+            <span>Shift Management</span>
+            <span>GPS Attendance</span>
+            <span>HR Ready</span>
           </div>
+
+          {/* CENTER */}
+          <div className="hero-center">
+            <h1>
+              Powerful Timesheet Software <br />
+              <span>for UAE Businesses</span>
+            </h1>
+
+            <p>
+              Manage attendance, projects, payroll and compliance from a
+              single unified platform built for modern teams.
+            </p>
+
+            <button className="hero-btn">Start Free Demo</button>
+          </div>
+
+          {/* RIGHT FEATURES */}
+          <div className="curve right">
+            <span>UAE Labour Law</span>
+            <span>Overtime Rules</span>
+            <span>Payroll Export</span>
+            <span>Multi Location</span>
+            <span>Multi Language</span>
+          </div>
+
         </div>
-
-        {/* IMAGE LAYER – NOT A SECTION */}
-        <div className="hero-image-layer">
-          <img src="/images/hero -1.webp" className="hero-img img-1" />
-          <img src="/images/hero-2.webp" className="hero-img img-2" />
-          <img src="/images/hero-3.webp" className="hero-img img-3" />
-          <img src="/images/hero-4.webp" className="hero-img img-4" />
-          <img src="/images/hero-5.webp" className="hero-img img-5" />
-          <img src="/images/hero-6.webp" className="hero-img img-6" />
-          <img src="/images/hero-7.webp" className="hero-img img-7" />
-          <img src="/images/hero-9.webp" className="hero-img img-8" />
-          <img src="/images/hero-10.webp" className="hero-img img-9" />
-          <img src="/images/hero-11.webp" className="hero-img img-10" />
-
-
-          <img src="/images/hero-8.webp" className="hero-leaf" />
-        </div>
-
       </section>
+
 
 
 
@@ -70,506 +56,523 @@ export default function Home() {
       {/* {Hero sectio END} */}
 
 
-      {/* {Why Choose us} */}
-      <section className="why-choose-model">
-        <div className="container">
 
-          {/* Section Title */}
-          <div className="text-center mb-5 py-4">
-            <h2 className="why-title">
-              We work together to <span>make your process better</span>
+      {/* STATS + TRUST */}
+      <section className="stats-dark">
+        <div className="stats-container">
+
+          {/* LEFT CONTENT */}
+          <div className="stats-text">
+            <h2>
+              Data that proves <br />
+              <span>Real Productivity Gains</span>
             </h2>
+
+            <p>
+              Track adoption, accuracy, and compliance growth with analytics
+              designed specifically for UAE businesses.
+            </p>
+
+            <ul className="stats-points">
+              <li><span className="dot yellow"></span>99.9% platform uptime</li>
+              <li><span className="dot blue"></span>100% accurate time capture</li>
+              <li><span className="dot green"></span>Used across 8+ industries</li>
+            </ul>
           </div>
 
-          <div className="row g-5">
-
-            {/* LEFT COLUMN */}
-            <div className="col-lg-6">
-
-              <div className="why-item d-flex">
-                <div className="why-icon">
-                  👤
-                </div>
-                <div className="why-content">
-                  <h5>100% Accurate Time Tracking</h5>
-                  <p>
-                    Record employee work hours, breaks, overtime, and project time
-                    automatically with complete accuracy and zero manual errors.
-                  </p>
-                </div>
-              </div>
-
-              <div className="why-item d-flex">
-                <div className="why-icon">
-                  ⏱️
-                </div>
-                <div className="why-content">
-                  <h5>Up-to-the-Minute Attendance</h5>
-                  <p>
-                    Track real-time clock-in and clock-out across office and field
-                    employees using mobile, web, GPS, or IP-based validation.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-
-            {/* RIGHT COLUMN */}
-            <div className="col-lg-6">
-
-              <div className="why-item d-flex">
-                <div className="why-icon">
-                  🔄
-                </div>
-                <div className="why-content">
-                  <h5>UAE Labour Law Compliant</h5>
-                  <p>
-                    Built with UAE regulations in mind, including overtime slabs,
-                    shift policies, and daily or weekly working hour limits.
-                  </p>
-                </div>
-              </div>
-
-              <div className="why-item d-flex">
-                <div className="why-icon">
-                  📅
-                </div>
-                <div className="why-content">
-                  <h5>Integrated Leave Management</h5>
-                  <p>
-                    Manage leave requests, approvals, balances, and payroll impact
-                    in one place with automatic calculations.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-
+          {/* RIGHT CARD */}
+          <div className="stats-card">
+            <img
+              src="/images/graph.png"
+              alt="Analytics Graph"
+            />
+            <span className="card-label">
+              Adoption & Accuracy Trend (last quarters)
+            </span>
           </div>
+
         </div>
       </section>
 
 
-      {/* {Why Choose us END} */}
+
+      {/* STATS + TRUST END */}
 
 
       {/* {features section } */}
 
-      <section id="features" className="py-5">
-        <div className="container">
-          <div className="text-center mb-5">
-            <h2 className="why-title"><span>Key Features</span></h2>
-            <p className="text-muted mt-2 fw-bold">
-              Everything you need to manage time, projects, and payroll — in one platform.
-            </p>
+      <section className="why-dark">
+        <div className="container why-grid">
+          {/* LEFT VISUAL CARD */}
+          <div className="brand-card">
+            <span className="stat stat-top">
+              99.9%<small>Uptime</small>
+            </span>
+            <img src="images/nickname-logo.png" alt="NickName InfoTech" />
+            <span className="tagline">WE DO IT</span>
+            <span className="stat stat-bottom">
+              100%<small>Accurate Tracking</small>
+            </span>
+            {/* GLOW SHAPES */}
+            <span className="glow yellow" />
+            <span className="glow blue" />
+            <span className="glow green" />
           </div>
-
-          <div className="row g-4">
-            <div className="col-md-6 col-lg-4">
-              <div className="feature-card h-100 p-4">
-                <div className="feature-icon">
-                  <i className="bi bi-clock-history"></i>
+          {/* RIGHT CONTENT */}
+          <div className="why-content">
+            <h2>
+              Why UAE Companies Choose
+              <span>NickName Time Sheet</span>
+            </h2>
+            <p className="subtitle">
+              Smart, compliant and payroll-ready timesheet software built specifically
+              for UAE businesses.
+            </p>
+            <ul className="why-list">
+              <li>
+                <span className="icon yellow">⏱</span>
+                <div>
+                  <h4>Accurate Time Tracking</h4>
+                  <p>
+                    Automatic capture of work hours, overtime and project time with
+                    zero errors.
+                  </p>
                 </div>
-                <h5 className="fw-bold">Smart Time Tracking</h5>
-                <p className="text-muted mt-2">
-                  Clock-in and clock-out via mobile or web with GPS and IP validation.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4">
-              <div className="feature-card h-100 p-4">
-                <div className="feature-icon">
-                  <i className="bi bi-list-check"></i>
+              </li>
+              <li>
+                <span className="icon blue">⚖</span>
+                <div>
+                  <h4>UAE Labour Law Compliant</h4>
+                  <p>
+                    Built for UAE rules including overtime slabs, shift policies and
+                    compliance tracking.
+                  </p>
                 </div>
-                <h5 className="fw-bold">Project & Task Timesheets</h5>
-                <p className="text-muted mt-2">
-                  Track hours per project and compare planned vs actual effort.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4">
-              <div className="feature-card h-100 p-4">
-                <div className="feature-icon">
-                  <i className="bi bi-calendar2-week"></i>
+              </li>
+              <li>
+                <span className="icon green">📊</span>
+                <div>
+                  <h4>Payroll-Ready Reports</h4>
+                  <p>Export WPS and payroll-ready reports in one single click.</p>
                 </div>
-                <h5 className="fw-bold">Overtime & Leave Management</h5>
-                <p className="text-muted mt-2">
-                  Auto-calculated overtime, leave requests, approvals, and balance tracking.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4">
-              <div className="feature-card h-100 p-4">
-                <div className="feature-icon">
-                  <i className="bi bi-check2-circle"></i>
-                </div>
-                <h5 className="fw-bold">Approval Workflow</h5>
-                <p className="text-muted mt-2">
-                  Managers can review, edit, approve, or reject timesheets easily.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4">
-              <div className="feature-card h-100 p-4">
-                <div className="feature-icon">
-                  <i className="bi bi-bar-chart-line"></i>
-                </div>
-                <h5 className="fw-bold">Advanced Reports & Analytics</h5>
-                <p className="text-muted mt-2">
-                  Daily, weekly, and monthly reports with productivity insights.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4">
-              <div className="feature-card h-100 p-4">
-                <div className="feature-icon">
-                  <i className="bi bi-credit-card-2-front"></i>
-                </div>
-                <h5 className="fw-bold">Payroll & Billing Integration</h5>
-                <p className="text-muted mt-2">
-                  Export payroll data and auto-generate invoices for clients.
-                </p>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+
+
 
 
       {/* {features section END} */}
 
       {/* {PERFECT FOR INDUSTRIES} */}
 
-      <section id="industries" className="section-gap">
+      <section className="industries-visual" id="industries">
         <div className="container">
+
+          {/* Heading */}
           <div className="text-center mb-5">
-            <h3 className="why-title">
-              <span>Perfect for These Industries in UAE</span>
-            </h3>
+            <h2 className="section-title">
+              Perfect for These <span>Industries in UAE</span>
+            </h2>
+            <p className="section-subtitle">
+              Designed to support diverse industries with accurate time tracking,
+              compliance, and productivity insights.
+            </p>
           </div>
 
-          <div className="row g-4">
-            <div className="col-6 col-md-4 col-lg-3">
-              <div className="industry-card">
-                <div className="industry-icon bg-blue">
-                  <i className="bi bi-building"></i>
-                </div>
-                <p>Construction & Contracting</p>
+          {/* Grid */}
+          <div className="industries-grid">
+
+            <div className="industry-card">
+              <img src="/images/hero -1.webp" alt="Construction & Contracting" />
+              <div className="overlay">
+                <h5>Construction & Contracting</h5>
               </div>
             </div>
 
-            <div className="col-6 col-md-4 col-lg-3">
-              <div className="industry-card">
-                <div className="industry-icon bg-green">
-                  <i className="bi bi-tools"></i>
-                </div>
-                <p>Facility Management</p>
+            <div className="industry-card">
+              <img src="/images/hero-2.webp" alt="Facility Management" />
+              <div className="overlay">
+                <h5>Facility Management</h5>
               </div>
             </div>
 
-            <div className="col-6 col-md-4 col-lg-3">
-              <div className="industry-card">
-                <div className="industry-icon bg-purple">
-                  <i className="bi bi-code-slash"></i>
-                </div>
-                <p>IT & Software Companies</p>
+            <div className="industry-card">
+              <img src="/images/hero-3.webp" alt="IT & Software Companies" />
+              <div className="overlay">
+                <h5>IT & Software Companies</h5>
               </div>
             </div>
 
-            <div className="col-6 col-md-4 col-lg-3">
-              <div className="industry-card">
-                <div className="industry-icon bg-orange">
-                  <i className="bi bi-briefcase"></i>
-                </div>
-                <p>Consulting Firms</p>
+            <div className="industry-card">
+              <img src="/images/hero-4.webp" alt="Consulting Firms" />
+              <div className="overlay">
+                <h5>Consulting Firms</h5>
               </div>
             </div>
 
-            <div className="col-6 col-md-4 col-lg-3">
-              <div className="industry-card">
-                <div className="industry-icon bg-teal">
-                  <i className="bi bi-truck"></i>
-                </div>
-                <p>Logistics & Transportation</p>
+            <div className="industry-card">
+              <img src="/images/hero-5.webp" alt="Logistics & Transportation" />
+              <div className="overlay">
+                <h5>Logistics & Transportation</h5>
               </div>
             </div>
 
-            <div className="col-6 col-md-4 col-lg-3">
-              <div className="industry-card">
-                <div className="industry-icon bg-red">
-                  <i className="bi bi-heart-pulse"></i>
-                </div>
-                <p>Healthcare & Clinics</p>
+            <div className="industry-card">
+              <img src="/images/hero-6.webp" alt="Healthcare & Clinics" />
+              <div className="overlay">
+                <h5>Healthcare & Clinics</h5>
               </div>
             </div>
 
-            <div className="col-6 col-md-4 col-lg-3">
-              <div className="industry-card">
-                <div className="industry-icon bg-yellow">
-                  <i className="bi bi-gear"></i>
-                </div>
-                <p>Manufacturing</p>
+            <div className="industry-card">
+              <img src="/images/hero-7.webp" alt="Manufacturing" />
+              <div className="overlay">
+                <h5>Manufacturing</h5>
               </div>
             </div>
 
-            <div className="col-6 col-md-4 col-lg-3">
-              <div className="industry-card">
-                <div className="industry-icon bg-indigo">
-                  <i className="bi bi-shop"></i>
-                </div>
-                <p>Trading & Retail</p>
+            <div className="industry-card">
+              <img src="/images/hero-8.webp" alt="Trading & Retail" />
+              <div className="overlay">
+                <h5>Trading & Retail</h5>
               </div>
             </div>
+
           </div>
         </div>
       </section>
+
 
       {/* {PERFECT FOR INDUSTRIES END} */}
 
-      {/* {Secure. Scalable. Cloud-Ready.} */}
 
-      <section id="security" className="security-section">
-        <div className="container">
-          <div className="security-box text-center">
-            <h2 className="security-title">
-              Secure. Scalable. Cloud-Ready.
-            </h2>
-
-            <p className="security-desc">
-              Hosted on secure cloud servers with 99.9% uptime, data encryption,
-              automated backups, and enterprise-grade access control.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* { Secure. Scalable. Cloud-Ready.END} */}
 
       {/* { Mobile App for Employees & Managers} */}
 
 
-      <section id="mobile-app" className="mobile-app-section">
+      <section className="mobile-app-mass">
         <div className="container">
-          <div className="row align-items-center g-5">
 
-            {/* Left Content */}
-            <div className="col-lg-6">
-              <h2 className="mobile-app-title">
-                Mobile App for Employees & Managers
-              </h2>
+          {/* Heading */}
+          <div className="text-center mb-5">
+            <h2 className="mass-title">
+              One App. <span>Two Powerful Experiences.</span>
+            </h2>
+            <p className="mass-subtitle">
+              Designed for employees on the move and managers in control.
+            </p>
+          </div>
 
-              <div className="mobile-app-block">
-                <h5>Employees can:</h5>
-                <ul>
-                  <li>Clock-in / Clock-out</li>
-                  <li>Submit timesheets</li>
-                  <li>Request leave</li>
-                  <li>View shifts & updates</li>
-                </ul>
-              </div>
+          <div className="mass-wrapper">
 
-              <div className="mobile-app-block">
-                <h5>Managers can:</h5>
-                <ul>
-                  <li>Approve / reject entries</li>
-                  <li>Monitor team performance</li>
-                  <li>Assign tasks & projects</li>
-                </ul>
-              </div>
+            {/* LEFT – EMPLOYEE */}
+            <div className="mass-card employee">
+              <h5>For Employees</h5>
+              <ul>
+                <li>Clock-in / Clock-out</li>
+                <li>Submit Timesheets</li>
+                <li>Request Leave</li>
+                <li>View Shifts & Updates</li>
+              </ul>
             </div>
 
-            {/* Right Image */}
-            <div className="col-lg-6 text-center">
+            {/* CENTER – PHONE */}
+            <div className="mass-phone">
               <img
-                src="/images/mobile-app.png"
-                alt="Mobile App Preview"
-                className="mobile-app-img"
+                src="/images/mobile-2.webp"
+                alt="NickName Time Sheet App"
               />
             </div>
 
+            {/* RIGHT – MANAGER */}
+            <div className="mass-card manager">
+              <h5>For Managers</h5>
+              <ul>
+                <li>Approve / Reject Entries</li>
+                <li>Monitor Team Performance</li>
+                <li>Assign Tasks & Projects</li>
+              </ul>
+            </div>
+
           </div>
+
+          {/* Background shapes */}
+          <span className="mass-bg yellow"></span>
+          <span className="mass-bg blue"></span>
+
         </div>
       </section>
+
 
 
       {/* Mobile App for Employees & Managers END */}
 
-      {/* Announcements & Internal Communication Section */}
+      {/* Security */}
 
-
-      <section id="security" className="security-section-1">
+      <section className="security-plexify">
         <div className="container">
-          <div className="security-box text-center">
-            <h2 className="security-title">
-              Announcements & Internal Communication
 
-            </h2>
+          <div className="security-plexify-wrapper">
 
-            <p className="security-desc">
-              Share circulars, new updates, instructions, meeting notes & important alerts — visible instantly to all employees.
-            </p>
-          </div>
-        </div>
-      </section>
+            {/* LEFT – CONTENT */}
+            <div className="security-plexify-content">
+              <h2>
+                Enterprise-Grade <br />
+                <span>Security & Compliance</span>
+              </h2>
 
-      {/* Announcements & Internal Communication Section END */}
-
-      {/* Language section */}
-
-      <section id="multi-language" className="language-section">
-        <div className="container">
-          <div className="row align-items-center g-5">
-
-            {/* Left Content */}
-            <div className="col-lg-6">
-              <h2 className="language-title">Multi-Language Support</h2>
-
-              <p className="language-desc">
-                Supports English, Arabic, Hindi, Urdu, Malayalam, Tamil & more —
-                enabling teams to work comfortably in their preferred language.
+              <p>
+                Designed for UAE businesses that demand
+                reliability, compliance, and total data protection.
               </p>
+
+              <ul>
+                <li>✔ End-to-end encrypted data</li>
+                <li>✔ UAE labour law ready</li>
+                <li>✔ Role-based access control</li>
+                <li>✔ 99.9% cloud uptime</li>
+              </ul>
             </div>
 
-            {/* Right Globe Visual */}
-            <div className="col-lg-6">
-              <div className="globe-wrapper">
+            {/* RIGHT – VISUAL */}
+            <div className="security-plexify-visual">
+              <img
+                src="/images/security.webp"
+                alt="Security Dashboard"
+                className="security-dashboard"
+              />
 
-                <img
-                  src="/images/globe.avif"
-                  alt="Global Language Support"
-                  className="globe-img"
-                />
+              {/* Floating stats */}
+              <div className="security-float yellow">
+                <strong>99.9%</strong>
+                <span>Uptime</span>
+              </div>
 
-                <span className="lang-tag lang-en">English</span>
-                <span className="lang-tag lang-ar">العربية</span>
-                <span className="lang-tag lang-hi">हिन्दी</span>
-                <span className="lang-tag lang-ur">اردو</span>
-                <span className="lang-tag lang-ml">മലയാളം</span>
-                <span className="lang-tag lang-ta">தமிழ்</span>
+              <div className="security-float blue">
+                <strong>Encrypted</strong>
+                <span>Data</span>
+              </div>
 
+              <div className="security-float green">
+                <strong>UAE</strong>
+                <span>Compliant</span>
               </div>
             </div>
 
           </div>
+
+          {/* GLOW SHAPES */}
+          <span className="plex-glow yellow"></span>
+          <span className="plex-glow blue"></span>
+
         </div>
       </section>
+
+      {/* Security END */}
+
+
+      {/* CTA SECTION */}
+
+      <section className="trust-pro">
+        <div className="container">
+
+          {/* BIG STATEMENT */}
+          <div className="trust-header">
+            <h2>
+              Trusted by <span>UAE Businesses</span> <br />
+              That Run on Accuracy
+            </h2>
+
+            <p>
+              From construction sites to IT teams,
+              organizations across the UAE rely on
+              NickName Time Sheet to stay compliant,
+              productive, and in control.
+            </p>
+          </div>
+
+          {/* LOGO MARQUEE */}
+          <div className="logo-marquee">
+            <div className="logo-track">
+              <img src="/images/nickname-logo.png" />
+              <img src="/images/nickname-logo.png" />
+              <img src="/images/nickname-logo.png" />
+              <img src="/images/nickname-logo.png" />
+              <img src="/images/nickname-logo.png" />
+              <img src="/images/lnickname-logo.png" />
+
+              {/* repeat for smooth loop */}
+              <img src="/images/nickname-logo.png" />
+              <img src="/images/nickname-logo.png" />
+              <img src="/images/nickname-logo.png" />
+            </div>
+          </div>
+
+          {/* TRUST METRICS */}
+          <div className="trust-metrics">
+            <div>
+              <strong>99.9%</strong>
+              <span>Uptime</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Accurate Tracking</span>
+            </div>
+            <div>
+              <strong>8+</strong>
+              <span>Industries</span>
+            </div>
+            <div>
+              <strong>UAE</strong>
+              <span>Compliant</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      {/* CTA SECTION END */}
+
+
+      {/* Language section */}
+
+      <section className="language-pro dark">
+        <div className="container">
+
+          <div className="language-grid">
+
+            {/* LEFT CONTENT */}
+            <div className="language-content">
+              <h2>
+                Built for a <span>Global Workforce</span>
+              </h2>
+
+              <p>
+                Empower employees across regions to work
+                comfortably in their preferred language —
+                boosting adoption, accuracy, and productivity.
+              </p>
+
+              <ul className="lang-list">
+                <li>English</li>
+                <li>Arabic</li>
+                <li>Tamil</li>
+                <li>Hindi</li>
+                <li>Urdu</li>
+                <li>Malayalam</li>
+              </ul>
+            </div>
+
+            {/* RIGHT VISUAL */}
+            <div className="language-visual">
+              <div className="globe-glow"></div>
+
+              <img
+                src="/images/globe.png"
+                alt="Global Language Support"
+                className="globe-img"
+              />
+
+              <span className="lang-pill p1">English</span>
+              <span className="lang-pill p2">العربية</span>
+              <span className="lang-pill p3">தமிழ்</span>
+              <span className="lang-pill p4">हिंदी</span>
+              <span className="lang-pill p5">اردو</span>
+              <span className="lang-pill p6">മലയാളം</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
 
 
 
       {/* Language section END */}
 
-      {/* Why Your UAE Business Needs This */}
 
 
-
-      <section id="why-uae" className="py-5">
-        <div className="container">
-          <div className="text-center mb-5">
-            <h2 className="why-title">Why Your UAE Business Needs This</h2>
-          </div>
-
-          <div className="row g-4 justify-content-center">
-
-            {/* Row 1 */}
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="why-card">
-                <div className="why-icon">
-                  <i className="bi bi-shield-check"></i>
-                </div>
-                <p>Reduce manual errors</p>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="why-card">
-                <div className="why-icon">
-                  <i className="bi bi-graph-up-arrow"></i>
-                </div>
-                <p>Improve productivity</p>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="why-card">
-                <div className="why-icon">
-                  <i className="bi bi-file-earmark-check"></i>
-                </div>
-                <p>Ensure compliance</p>
-              </div>
-            </div>
-
-            {/* Row 2 */}
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="why-card">
-                <div className="why-icon">
-                  <i className="bi bi-clock-history"></i>
-                </div>
-                <p>Save time on payroll</p>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="why-card">
-                <div className="why-icon">
-                  <i className="bi bi-people"></i>
-                </div>
-                <p>Manage hybrid & field teams easily</p>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="why-card">
-                <div className="why-icon">
-                  <i className="bi bi-currency-dollar"></i>
-                </div>
-                <p>Better project cost control</p>
-              </div>
-            </div>
-
-          </div>
+      {/* CTA STRIP */}
+      <section className="footer-cta">
+        <div className="container footer-cta-inner">
+          <h3>
+            Ready to simplify time tracking for your business?
+          </h3>
+          <a href="#demo" className="btn btn-dark">
+            Start Free Demo
+          </a>
         </div>
       </section>
 
-      {/* Why Your UAE Business Needs This END */}
-
-
-      {/* last section */}
-      <section id="cta-demo" className="cta-section">
+      {/* FOOTER */}
+      <footer className="main-footer">
         <div className="container">
-          <div className="cta-box text-center">
-            <h2 className="cta-title">
-              Start Your Free Demo Today
-            </h2>
 
-            <p className="cta-desc">
-              Experience how easy it is to manage timesheets, projects, and payroll —
-              all from one powerful platform.
-            </p>
+          <div className="footer-grid">
 
-            <p className="cta-sub">
-              Try the UAE’s most efficient Timesheet Management Software now.
-            </p>
+            {/* BRAND */}
+            <div className="footer-brand">
+              <img
+                src="/images/nickname-logo.png"
+                alt="NickName InfoTech"
+                width={120}
+              />
+              <p>
+                Smart, compliant, and scalable timesheet
+                management software built for UAE businesses.
+              </p>
+            </div>
 
-            <div className="cta-actions">
-              <a href="#contact" className="cta-btn primary">
-                Request Free Demo
-              </a>
-              <a href="#contact" className="cta-btn secondary">
-                Talk to Sales
-              </a>
+            {/* LINKS */}
+            <div className="footer-links">
+              <h5>Product</h5>
+              <a href="#">Features</a>
+              <a href="#">Industries</a>
+              <a href="#">Pricing</a>
+              <a href="#">Mobile App</a>
+            </div>
+
+            <div className="footer-links">
+              <h5>Company</h5>
+              <a href="#">About Us</a>
+              <a href="#">Careers</a>
+              <a href="#">Contact</a>
+              <a href="#">Blog</a>
+            </div>
+
+            <div className="footer-links">
+              <h5>Legal</h5>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">UAE Labour Law</a>
+            </div>
+
+          </div>
+
+          {/* BOTTOM BAR */}
+          <div className="footer-bottom">
+            <span>
+              © {new Date().getFullYear()} NickName InfoTech. All rights reserved.
+            </span>
+
+            <div className="footer-socials">
+              <a href="#">LinkedIn</a>
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
             </div>
           </div>
+
         </div>
-      </section>
+      </footer>
 
-
-
-      {/* last section END */}
 
 
 
