@@ -34,6 +34,28 @@ export default function Home() {
       prevBtn.removeEventListener("click", scrollPrev);
     };
   }, []);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    const navbar = document.querySelector(".main-navbar");
+
+    if (!navbar) return;
+
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // scrolling DOWN → hide navbar
+        navbar.classList.add("nav-hidden");
+      } else {
+        // scrolling UP → show navbar
+        navbar.classList.remove("nav-hidden");
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
 
@@ -43,6 +65,42 @@ export default function Home() {
 
 
       {/* <Navbar /> */}
+
+      {/* NAVBAR */}
+      <nav className="main-navbar">
+        <div className="nav-inner">
+
+          {/* Logo */}
+          <div className="nav-logo">
+            <img
+              src="/images/Logo.png"
+              alt="NickName InfoTech"
+              className="logo"
+
+            />
+
+          </div>
+
+          {/* Menu */}
+          <ul className="nav-links">
+            <li>Pricing</li>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Help Centre</li>
+            <li className="dropdown">
+              Resources <span>▾</span>
+            </li>
+          </ul>
+
+          {/* Actions */}
+          <div className="nav-actions">
+            <button className="btn ghost">Sign In</button>
+            <button className="btn primary">Register</button>
+          </div>
+
+        </div>
+      </nav>
+
 
       {/* {Hero sectio} */}
       <section className="hero-curve">
@@ -147,8 +205,8 @@ export default function Home() {
             <span className="stat stat-top">
               99.9%<small>Uptime</small>
             </span>
-            <img src="images/nickname-logo.png" alt="NickName InfoTech" />
-            <span className="tagline">WE DO IT</span>
+            <img src="images/Logo.png" alt="NickName InfoTech" />
+
             <span className="stat stat-bottom">
               100%<small>Accurate Tracking</small>
             </span>
@@ -468,7 +526,14 @@ export default function Home() {
       {/* CTA SECTION */}
 
       <section className="trust-pro">
+
+        <div className="cta-image">
+          {/* <img src="/images/mobile-3.jpg" className="phone main" /> */}
+
+        </div>
         <div className="container">
+
+
 
           {/* BIG STATEMENT */}
           <div className="trust-header">
@@ -485,20 +550,23 @@ export default function Home() {
             </p>
           </div>
 
+
+
+
           {/* LOGO MARQUEE */}
           <div className="logo-marquee">
             <div className="logo-track">
-              <img src="/images/nickname-logo.png" />
-              <img src="/images/nickname-logo.png" />
-              <img src="/images/nickname-logo.png" />
-              <img src="/images/nickname-logo.png" />
-              <img src="/images/nickname-logo.png" />
-              <img src="/images/lnickname-logo.png" />
+              <img src="/images/Logo.png" />
+              <img src="/images/Logo.png" />
+              <img src="/images/Logo.png" />
+              <img src="/images/Logo.png" />
+              <img src="/images/Logo.png" />
+              <img src="/images/Logo.png" />
 
               {/* repeat for smooth loop */}
-              <img src="/images/nickname-logo.png" />
-              <img src="/images/nickname-logo.png" />
-              <img src="/images/nickname-logo.png" />
+              <img src="/images/Logo.png" />
+              <img src="/images/Logo.png" />
+              <img src="/images/Logo.png" />
             </div>
           </div>
 
@@ -524,6 +592,10 @@ export default function Home() {
 
         </div>
       </section>
+
+
+
+
 
 
 
@@ -683,53 +755,75 @@ export default function Home() {
 
 
       {/* FOOTER */}
-      <footer className="footer-dark-pro">
-        <div className="footer-grid-pro">
-          {/* BRAND */}
-          <div className="footer-brand">
-            <h2>NickName</h2>
-            <p>
-              Smart, compliant and scalable timesheet software built for UAE
-              businesses.
-            </p>
-            <a href="#" className="footer-link">
-              Read More →
+      <footer className="pro-footer">
+
+        {/* TOP BAR */}
+        <div className="footer-top">
+          <div className="container footer-top-inner">
+            <a href="mailto:support@nicknameinfotech.com" className="footer-mail">
+              support@nicknameinfotech.com
             </a>
-          </div>
-          {/* ABOUT */}
-          <div className="footer-col">
-            <h5>About</h5>
-            <a href="#">Success History</a>
-            <a href="#">Meet The Team</a>
-            <a href="#">Latest News</a>
-            <a href="#">Need a Career?</a>
-          </div>
-          {/* QUICK LINKS */}
-          <div className="footer-col">
-            <h5>Quick Links</h5>
-            <a href="#">Software Solutions</a>
-            <a href="#">Web Development</a>
-            <a href="#">Application Design</a>
-            <a href="#">SEO Optimization</a>
-          </div>
-          {/* CONTACT */}
-          <div className="footer-col">
-            <h5>Get in Touch</h5>
-            <p>📍 Dubai, United Arab Emirates</p>
-            <p>✉ support@nickname.com</p>
-            <p>📞 +971 55 123 4567</p>
+
             <div className="footer-socials">
-              <a href="#"><i className="fab fa-facebook-f"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
-              <a href="#"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#"><i className="fab fa-facebook-f" /></a>
+              <a href="#"><i className="fab fa-x-twitter" /></a>
+              <a href="#"><i className="fab fa-linkedin-in" /></a>
+              <a href="#"><i className="fab fa-youtube" /></a>
+              <a href="#"><i className="fab fa-instagram" /></a>
             </div>
           </div>
         </div>
-        <div className="footer-bottom-pro">
+
+        {/* CERTIFICATIONS */}
+        <div className="footer-cert">
+          <p>Choose Privacy. Choose NickName.</p>
+
+          <div className="cert-row">
+            <img src="/images/Logo.png" />
+            <img src="/images/Logo.png" />
+            <img src="/images/Logo.png" />
+            <img src="/images/Logo.png" />
+            <img src="/images/Logo.png" />
+          </div>
+        </div>
+
+        {/* SEARCH */}
+        <div className="footer-search">
+          <div className="container search-wrap">
+            <input
+              type="text"
+              placeholder="Search product details, FAQs, and more..."
+            />
+            <button>🔍</button>
+
+            <div className="lang-select">
+              🌐 English ▾
+            </div>
+          </div>
+        </div>
+
+        {/* LINKS */}
+        <div className="footer-links">
+          <div className="container">
+            <a>Contact Us</a>
+            <a>Security</a>
+            <a>Compliance</a>
+            <a>IPR Complaints</a>
+            <a>Anti-Spam Policy</a>
+            <a>Terms of Service</a>
+            <a>Privacy Policy</a>
+            <a>Cookie Policy</a>
+            <a>GDPR Compliance</a>
+          </div>
+        </div>
+
+        {/* COPYRIGHT */}
+        <div className="footer-bottom">
           © 2026 NickName InfoTech. All rights reserved.
         </div>
+
       </footer>
+
 
 
 
