@@ -1,10 +1,47 @@
+"use client";
+
+import { useEffect } from "react";
+
 import { features } from "process";
 import Navbar from "./Components/Navbar";
 
 
+
+
+
+
 export default function Home() {
+  useEffect(() => {
+    const track = document.querySelector(".carousel-track") as HTMLElement | null;
+    const nextBtn = document.querySelector(".nav.next");
+    const prevBtn = document.querySelector(".nav.prev");
+
+    if (!track || !nextBtn || !prevBtn) return;
+
+    const scrollNext = () => {
+      track.scrollBy({ left: 900, behavior: "smooth" });
+    };
+
+    const scrollPrev = () => {
+      track.scrollBy({ left: -900, behavior: "smooth" });
+    };
+
+    nextBtn.addEventListener("click", scrollNext);
+    prevBtn.addEventListener("click", scrollPrev);
+
+    return () => {
+      nextBtn.removeEventListener("click", scrollNext);
+      prevBtn.removeEventListener("click", scrollPrev);
+    };
+  }, []);
   return (
     <>
+
+
+
+
+
+
       {/* <Navbar /> */}
 
       {/* {Hero sectio} */}
@@ -24,8 +61,8 @@ export default function Home() {
 
           {/* CENTER */}
           <div className="hero-center">
-            <h1>
-              Powerful Timesheet Software <br />
+            <h1 className="hero-title">
+              Powerful Timesheet Software
               <span>for UAE Businesses</span>
             </h1>
 
@@ -36,6 +73,7 @@ export default function Home() {
 
             <button className="hero-btn">Start Free Demo</button>
           </div>
+
 
           {/* RIGHT FEATURES */}
           <div className="curve right">
@@ -48,6 +86,7 @@ export default function Home() {
 
         </div>
       </section>
+
 
 
 
@@ -121,8 +160,8 @@ export default function Home() {
           {/* RIGHT CONTENT */}
           <div className="why-content">
             <h2>
-              Why UAE Companies Choose
-              <span>NickName Time Sheet</span>
+              Why UAE Companies Choose<span> NickName Time Sheet</span>
+
             </h2>
             <p className="subtitle">
               Smart, compliant and payroll-ready timesheet software built specifically
@@ -249,6 +288,58 @@ export default function Home() {
       {/* {PERFECT FOR INDUSTRIES END} */}
 
 
+      {/* DASHBOARD UI CAROUSEL SECTION */}
+      <section className="ui-carousel">
+        <div className="container">
+
+          <div className="ui-header">
+
+            <h2>
+              Let’s See <span>Awesome Software UI</span>
+            </h2>
+            <p>
+              Explore real dashboard screens designed for productivity,
+              analytics and enterprise-grade operations.
+            </p>
+          </div>
+
+          <div className="carousel-wrapper">
+            <button className="nav prev">‹</button>
+
+            <div className="carousel-track">
+
+              <div className="ui-card">
+                <img src="/images/dash-1.png" alt="Dashboard UI 1" />
+              </div>
+
+              <div className="ui-card">
+                <img src="/images/dash-2.webp" alt="Dashboard UI 2" />
+              </div>
+
+              <div className="ui-card">
+                <img src="/images/dash-3.webp" alt="Dashboard UI 3" />
+              </div>
+
+              <div className="ui-card">
+                <img src="/images/dash-3.webp" alt="Dashboard UI 3" />
+              </div>
+
+              <div className="ui-card">
+                <img src="/images/dash-3.webp" alt="Dashboard UI 3" />
+              </div>
+
+            </div>
+
+            <button className="nav next">›</button>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
 
       {/* { Mobile App for Employees & Managers} */}
 
@@ -348,17 +439,17 @@ export default function Home() {
               {/* Floating stats */}
               <div className="security-float yellow">
                 <strong>99.9%</strong>
-                <span>Uptime</span>
+                <strong>Uptime</strong>
               </div>
 
               <div className="security-float blue">
                 <strong>Encrypted</strong>
-                <span>Data</span>
+                <strong>Data </strong>
               </div>
 
               <div className="security-float green">
                 <strong>UAE</strong>
-                <span>Compliant</span>
+                <strong>Complient </strong>
               </div>
             </div>
 
@@ -499,77 +590,144 @@ export default function Home() {
       {/* Language section END */}
 
 
+      {/* ENQUIRY SECTION */}
+      <section className="enquiry-center">
+        <div className="container">
 
-      {/* CTA STRIP */}
-      <section className="footer-cta">
-        <div className="container footer-cta-inner">
-          <h3>
-            Ready to simplify time tracking for your business?
-          </h3>
-          <a href="#demo" className="btn btn-dark">
-            Start Free Demo
-          </a>
+          <div className="enquiry-head">
+
+            <h2>
+              Request a <span>Free Demo</span>
+            </h2>
+            <p>
+              Talk to our experts and see how NickName Time Sheet
+              simplifies attendance, payroll and compliance.
+            </p>
+          </div>
+
+          <form className="enquiry-form">
+
+            <div className="field">
+              <label>Full Name</label>
+              <input type="text" />
+            </div>
+
+            <div className="field">
+              <label>Work Email</label>
+              <input type="email" />
+            </div>
+
+            <div className="field">
+              <label>Company Name</label>
+              <input type="text" />
+            </div>
+
+            <div className="field">
+              <label>Company Size</label>
+              <select>
+                <option>1–10 Employees</option>
+                <option>11–50 Employees</option>
+                <option>51–200 Employees</option>
+                <option>200+ Employees</option>
+              </select>
+            </div>
+
+            <div className="field">
+              <label>Your Requirement</label>
+              <textarea></textarea>
+            </div>
+
+            <button className="submit-btn">
+              Schedule Free Demo →
+            </button>
+
+            <p className="form-note">
+              No spam. We’ll contact you within 24 hours.
+            </p>
+
+          </form>
         </div>
       </section>
 
+
+
+      {/* ENQUIRY SECTION  END*/}
+
+
+
+      {/* {CTA strip} */}
+
+      <section className="footer-cta-pro">
+        <div className="footer-cta-box">
+          <div className="cta-left">
+            <h3>Have Any Help to SaaS Solutions?</h3>
+            <p>Professional service for your software solutions</p>
+          </div>
+          <div className="cta-right">
+            <a href="#" className="cta-btn primary">
+              Get Started →
+            </a>
+            <a href="#" className="cta-btn outline">
+              Learn More →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* {CTA strip END} */}
+
+
+
+
+
+
+
       {/* FOOTER */}
-      <footer className="main-footer">
-        <div className="container">
-
-          <div className="footer-grid">
-
-            {/* BRAND */}
-            <div className="footer-brand">
-              <img
-                src="/images/nickname-logo.png"
-                alt="NickName InfoTech"
-                width={120}
-              />
-              <p>
-                Smart, compliant, and scalable timesheet
-                management software built for UAE businesses.
-              </p>
-            </div>
-
-            {/* LINKS */}
-            <div className="footer-links">
-              <h5>Product</h5>
-              <a href="#">Features</a>
-              <a href="#">Industries</a>
-              <a href="#">Pricing</a>
-              <a href="#">Mobile App</a>
-            </div>
-
-            <div className="footer-links">
-              <h5>Company</h5>
-              <a href="#">About Us</a>
-              <a href="#">Careers</a>
-              <a href="#">Contact</a>
-              <a href="#">Blog</a>
-            </div>
-
-            <div className="footer-links">
-              <h5>Legal</h5>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-              <a href="#">UAE Labour Law</a>
-            </div>
-
+      <footer className="footer-dark-pro">
+        <div className="footer-grid-pro">
+          {/* BRAND */}
+          <div className="footer-brand">
+            <h2>NickName</h2>
+            <p>
+              Smart, compliant and scalable timesheet software built for UAE
+              businesses.
+            </p>
+            <a href="#" className="footer-link">
+              Read More →
+            </a>
           </div>
-
-          {/* BOTTOM BAR */}
-          <div className="footer-bottom">
-            <span>
-              © {new Date().getFullYear()} NickName InfoTech. All rights reserved.
-            </span>
-
+          {/* ABOUT */}
+          <div className="footer-col">
+            <h5>About</h5>
+            <a href="#">Success History</a>
+            <a href="#">Meet The Team</a>
+            <a href="#">Latest News</a>
+            <a href="#">Need a Career?</a>
+          </div>
+          {/* QUICK LINKS */}
+          <div className="footer-col">
+            <h5>Quick Links</h5>
+            <a href="#">Software Solutions</a>
+            <a href="#">Web Development</a>
+            <a href="#">Application Design</a>
+            <a href="#">SEO Optimization</a>
+          </div>
+          {/* CONTACT */}
+          <div className="footer-col">
+            <h5>Get in Touch</h5>
+            <p>📍 Dubai, United Arab Emirates</p>
+            <p>✉ support@nickname.com</p>
+            <p>📞 +971 55 123 4567</p>
             <div className="footer-socials">
-              <a href="#">LinkedIn</a>
-              <a href="#">Instagram</a>
-              <a href="#">Facebook</a>
+              <a href="#"><i className="fab fa-facebook-f"></i></a>
+              <a href="#"><i className="fab fa-twitter"></i></a>
+              <a href="#"><i className="fab fa-instagram"></i></a>
+              <a href="#"><i className="fab fa-linkedin-in"></i></a>
             </div>
           </div>
-
+        </div>
+        <div className="footer-bottom-pro">
+          © 2026 NickName InfoTech. All rights reserved.
         </div>
       </footer>
 
