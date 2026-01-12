@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 import { features } from "process";
-import Navbar from "./Components/Navbar";
+
 
 
 
@@ -111,35 +111,34 @@ export default function Home() {
           {/* LEFT FEATURES */}
           <div className="curve left">
             <span>Smart Time Tracking</span>
-            <span>Project Timesheets</span>
+            <span>Payroll Ready</span>
             <span>Shift Management</span>
-            <span>GPS Attendance</span>
-            <span>HR Ready</span>
+            <span>Secure Data</span>
+            <span>UAE Complaint</span>
           </div>
 
           {/* CENTER */}
           <div className="hero-center">
             <h1 className="hero-title">
-              Powerful Timesheet Software
+              Next-Gen Timesheet Software Built
               <span>for UAE Businesses</span>
             </h1>
 
             <p>
-              Manage attendance, projects, payroll and compliance from a
-              single unified platform built for modern teams.
+              Automate time tracking, unlock productivity insights, improve operational efficiency, and ensure compliance with UAE labor regulations through one intelligent platform.
             </p>
 
-            <button className="hero-btn">Start Free Demo</button>
+            <button className="hero-btn">Get Personalized Demo</button>
           </div>
 
 
           {/* RIGHT FEATURES */}
           <div className="curve right">
-            <span>UAE Labour Law</span>
-            <span>Overtime Rules</span>
-            <span>Payroll Export</span>
-            <span>Multi Location</span>
-            <span>Multi Language</span>
+            <span>Leave Tracking</span>
+            <span>Productivity Insights</span>
+            <span>GPS Tracking</span>
+            <span>Mobile Access</span>
+            <span>Budget Tracking</span>
           </div>
 
         </div>
@@ -161,19 +160,18 @@ export default function Home() {
           {/* LEFT CONTENT */}
           <div className="stats-text">
             <h2>
-              Data that proves <br />
-              <span>Real Productivity Gains</span>
+              Proven Insights<br />
+              <span>That Drive Performance</span>
             </h2>
 
             <p>
-              Track adoption, accuracy, and compliance growth with analytics
-              designed specifically for UAE businesses.
+              Gain complete visibility into workforce adoption, accurate time and leave tracking, project progress, budget utilization, productivity insights, and payroll-ready reports—all from a single platform.
             </p>
 
             <ul className="stats-points">
-              <li><span className="dot yellow"></span>99.9% platform uptime</li>
-              <li><span className="dot blue"></span>100% accurate time capture</li>
-              <li><span className="dot green"></span>Used across 8+ industries</li>
+              <li><span className="dot yellow"></span>99.9% Reliable Platform</li>
+              <li><span className="dot blue"></span>100%  Precise Time Data </li>
+              <li><span className="dot green"></span>Configurable for Complex Industry Requirements</li>
             </ul>
           </div>
 
@@ -218,39 +216,36 @@ export default function Home() {
           {/* RIGHT CONTENT */}
           <div className="why-content">
             <h2>
-              Why UAE Companies Choose<span> NickName Time Sheet</span>
+              Companies Rely on Us <span> for Productivity Made Simple</span>
 
             </h2>
             <p className="subtitle">
-              Smart, compliant and payroll-ready timesheet software built specifically
-              for UAE businesses.
+              Manage projects, track budgets, assign tasks, hold employees accountable, generate invoices - all in your language effortlessly.
             </p>
             <ul className="why-list">
               <li>
                 <span className="icon yellow">⏱</span>
                 <div>
-                  <h4>Accurate Time Tracking</h4>
+                  <h4>Mobile-first, employee-friendly design</h4>
                   <p>
-                    Automatic capture of work hours, overtime and project time with
-                    zero errors.
+                    Easy-to-use interface designed for seamless access on any device, keeping employees productive on the go.
                   </p>
                 </div>
               </li>
               <li>
                 <span className="icon blue">⚖</span>
                 <div>
-                  <h4>UAE Labour Law Compliant</h4>
+                  <h4>Secure, cloud-based access</h4>
                   <p>
-                    Built for UAE rules including overtime slabs, shift policies and
-                    compliance tracking.
+                    Reliable cloud platform that ensures your data is safe, accessible anytime, anywhere.
                   </p>
                 </div>
               </li>
               <li>
                 <span className="icon green">📊</span>
                 <div>
-                  <h4>Payroll-Ready Reports</h4>
-                  <p>Export WPS and payroll-ready reports in one single click.</p>
+                  <h4>Track projects, budgets, and performance</h4>
+                  <p>Monitor project progress, budget usage, and team performance in real time for better decision-making.</p>
                 </div>
               </li>
             </ul>
@@ -271,11 +266,10 @@ export default function Home() {
           {/* Heading */}
           <div className="text-center mb-5">
             <h2 className="section-title">
-              Perfect for These <span>Industries in UAE</span>
+              Designed for Businesses<span> Across Sectors</span>
             </h2>
             <p className="section-subtitle">
-              Designed to support diverse industries with accurate time tracking,
-              compliance, and productivity insights.
+              Tailor every feature to fit your unique business needs and UAE compliance standards.
             </p>
           </div>
 
@@ -283,58 +277,58 @@ export default function Home() {
           <div className="industries-grid">
 
             <div className="industry-card">
-              <img src="/images/hero -1.webp" alt="Construction & Contracting" />
+              <img src="/images/track.webp" alt="Construction & Contracting" />
               <div className="overlay">
-                <h5>Construction & Contracting</h5>
+                <h5>Track Budget</h5>
               </div>
             </div>
 
             <div className="industry-card">
-              <img src="/images/hero-2.webp" alt="Facility Management" />
+              <img src="/images/manage.webp" alt="Facility Management" />
               <div className="overlay">
-                <h5>Facility Management</h5>
+                <h5>Manage Leave and Payroll</h5>
               </div>
             </div>
 
             <div className="industry-card">
-              <img src="/images/hero-3.webp" alt="IT & Software Companies" />
+              <img src="/images/monitor.png" alt="IT & Software Companies" />
               <div className="overlay">
-                <h5>IT & Software Companies</h5>
+                <h5>Monitor Project Milestone</h5>
               </div>
             </div>
 
             <div className="industry-card">
-              <img src="/images/hero-4.webp" alt="Consulting Firms" />
+              <img src="/images/plan.png" alt="Consulting Firms" />
               <div className="overlay">
-                <h5>Consulting Firms</h5>
+                <h5>Plan Projects</h5>
               </div>
             </div>
 
             <div className="industry-card">
-              <img src="/images/hero-5.webp" alt="Logistics & Transportation" />
+              <img src="/images/gps.webp" alt="Logistics & Transportation" />
               <div className="overlay">
-                <h5>Logistics & Transportation</h5>
+                <h5>GPS Tracking for field workers</h5>
               </div>
             </div>
 
             <div className="industry-card">
-              <img src="/images/hero-6.webp" alt="Healthcare & Clinics" />
+              <img src="/images/insight.webp" alt="Healthcare & Clinics" />
               <div className="overlay">
-                <h5>Healthcare & Clinics</h5>
+                <h5>Insights with dashboards and analytics </h5>
               </div>
             </div>
 
             <div className="industry-card">
-              <img src="/images/hero-7.webp" alt="Manufacturing" />
+              <img src="/images/multi.png" alt="Manufacturing" />
               <div className="overlay">
-                <h5>Manufacturing</h5>
+                <h5>Mutilingual </h5>
               </div>
             </div>
 
             <div className="industry-card">
-              <img src="/images/hero-8.webp" alt="Trading & Retail" />
+              <img src="/images/analys.png" alt="Trading & Retail" />
               <div className="overlay">
-                <h5>Trading & Retail</h5>
+                <h5>Analytics</h5>
               </div>
             </div>
 
@@ -353,11 +347,10 @@ export default function Home() {
           <div className="ui-header">
 
             <h2>
-              Let’s See <span>Awesome Software UI</span>
+              Seamless  <span>Control at Your Fingertips</span>
             </h2>
             <p>
-              Explore real dashboard screens designed for productivity,
-              analytics and enterprise-grade operations.
+              Take full control of your work with effortless navigation and smart tools.
             </p>
           </div>
 
@@ -408,10 +401,10 @@ export default function Home() {
           {/* Heading */}
           <div className="text-center mb-5">
             <h2 className="mass-title">
-              One App. <span>Two Powerful Experiences.</span>
+              Hierarchy Made  <span>Simple and Transparent </span>
             </h2>
             <p className="mass-subtitle">
-              Designed for employees on the move and managers in control.
+              Easily define roles, streamline workflows, track accountability, and keep everyone on the same page.
             </p>
           </div>
 
@@ -419,12 +412,13 @@ export default function Home() {
 
             {/* LEFT – EMPLOYEE */}
             <div className="mass-card employee">
-              <h5>For Employees</h5>
+              <h5>Multi-Role Management</h5>
               <ul>
-                <li>Clock-in / Clock-out</li>
-                <li>Submit Timesheets</li>
-                <li>Request Leave</li>
-                <li>View Shifts & Updates</li>
+                <li>Administrators</li>
+                <li>Managers</li>
+                <li>Team Leads</li>
+                <li>Human Resources</li>
+                <li>Employees</li>
               </ul>
             </div>
 
@@ -438,11 +432,13 @@ export default function Home() {
 
             {/* RIGHT – MANAGER */}
             <div className="mass-card manager">
-              <h5>For Managers</h5>
+              <h5>One-Word Action Style</h5>
               <ul>
-                <li>Approve / Reject Entries</li>
-                <li>Monitor Team Performance</li>
-                <li>Assign Tasks & Projects</li>
+                <li>Switch</li>
+                <li>Clock-in/Clock-out</li>
+                <li>Track</li>
+                <li>Submit/Approve</li>
+                <li>Report</li>
               </ul>
             </div>
 
@@ -469,22 +465,33 @@ export default function Home() {
             {/* LEFT – CONTENT */}
             <div className="security-plexify-content">
               <h2>
-                Enterprise-Grade <br />
-                <span>Security & Compliance</span>
+                Built with <span>Enterprise-Grade</span> Security
+
               </h2>
 
               <p>
-                Designed for UAE businesses that demand
-                reliability, compliance, and total data protection.
+                Ensuring data privacy, secure access, and reliable protection across all user roles.
               </p>
 
               <ul>
-                <li>✔ End-to-end encrypted data</li>
-                <li>✔ UAE labour law ready</li>
-                <li>✔ Role-based access control</li>
-                <li>✔ 99.9% cloud uptime</li>
+                <li>✔ Secure role-based access</li>
+                <li>✔ Encrypted data protection</li>
+                <li>✔ Strong user authentication</li>
+                <li>✔ Continuous security monitoring</li>
+                <li>✔ Compliance with security standards</li>
               </ul>
+              <br />
+
+              <p>
+
+                UAE Complient - Fully Configurable
+
+              </p>
+
+
+
             </div>
+
 
             {/* RIGHT – VISUAL */}
             <div className="security-plexify-visual">
@@ -538,17 +545,12 @@ export default function Home() {
           {/* BIG STATEMENT */}
           <div className="trust-header">
             <h2>
-              Trusted by <span>UAE Businesses</span> <br />
-              That Run on Accuracy
+              Trusted Across Industries <span> Worldwide</span>
+
             </h2>
 
             <p>
-              From construction sites to IT teams,
-              organizations across the UAE rely on
-              NickName Time Sheet to stay compliant,
-              productive, and in control.
-            </p>
-          </div>
+              Supporting companies worldwide with dependable technology, consistent performance, and solutions designed to scale with growing business needs.</p>          </div>
 
 
 
@@ -578,15 +580,15 @@ export default function Home() {
             </div>
             <div>
               <strong>100%</strong>
-              <span>Accurate Tracking</span>
+              <span>Accuracy</span>
             </div>
             <div>
-              <strong>8+</strong>
-              <span>Industries</span>
+              <strong>99%</strong>
+              <span>Automated</span>
             </div>
             <div>
-              <strong>UAE</strong>
-              <span>Compliant</span>
+              <strong>100%</strong>
+              <span>Productivity</span>
             </div>
           </div>
 
@@ -614,13 +616,13 @@ export default function Home() {
             {/* LEFT CONTENT */}
             <div className="language-content">
               <h2>
-                Built for a <span>Global Workforce</span>
+
+                Powering Teams Across Bor
+                <span>ders through Multilingual Access</span>
               </h2>
 
               <p>
-                Empower employees across regions to work
-                comfortably in their preferred language —
-                boosting adoption, accuracy, and productivity.
+                Designed to help global teams communicate, collaborate, and perform efficiently in their preferred language — reducing barriers, improving adoption, and enhancing productivity across regions.
               </p>
 
               <ul className="lang-list">
@@ -672,8 +674,7 @@ export default function Home() {
               Request a <span>Free Demo</span>
             </h2>
             <p>
-              Talk to our experts and see how NickName Time Sheet
-              simplifies attendance, payroll and compliance.
+              Talk to our expert to find the best approach for your requirements.
             </p>
           </div>
 
@@ -710,11 +711,11 @@ export default function Home() {
             </div>
 
             <button className="submit-btn">
-              Schedule Free Demo →
+              Book A Free Demo →
             </button>
 
             <p className="form-note">
-              No spam. We’ll contact you within 24 hours.
+              We’ll be in touch within 24 hours to assist you
             </p>
 
           </form>
@@ -732,8 +733,8 @@ export default function Home() {
       <section className="footer-cta-pro">
         <div className="footer-cta-box">
           <div className="cta-left">
-            <h3>Have Any Help to SaaS Solutions?</h3>
-            <p>Professional service for your software solutions</p>
+            <h3>How to adopt this for my team?</h3>
+            <p>Customize Nickname for your team.</p>
           </div>
           <div className="cta-right">
             <a href="#" className="cta-btn primary">
@@ -761,7 +762,7 @@ export default function Home() {
         <div className="footer-top">
           <div className="container footer-top-inner">
             <a href="mailto:support@nicknameinfotech.com" className="footer-mail">
-              support@nicknameinfotech.com
+              business@nicknameinfotech.com
             </a>
 
             <div className="footer-socials">
