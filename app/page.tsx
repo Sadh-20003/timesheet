@@ -83,12 +83,16 @@ export default function Home() {
 
           {/* Menu */}
           <ul className="nav-links">
-            <li>Pricing</li>
-            <li>About Us</li>
-            <li>Blog</li>
-            <li>Help Centre</li>
+            <li>Home</li>
+            <li>Product</li>
+            <li>Features</li>
+            <li> Industries</li>
+            <li> Security</li>
+            <li> Pricing</li>
+            <li> Company</li>
+            <li> Contact</li>
             <li className="dropdown">
-              Resources <span>▾</span>
+
             </li>
           </ul>
 
@@ -160,34 +164,34 @@ export default function Home() {
           {/* LEFT CONTENT */}
           <div className="stats-text">
             <h2>
-              Proven Insights<br />
+              Proven Insights <br />
               <span>That Drive Performance</span>
             </h2>
 
             <p>
-              Gain complete visibility into workforce adoption, accurate time and leave tracking, project progress, budget utilization, productivity insights, and payroll-ready reports—all from a single platform.
+              Gain complete visibility into workforce adoption, accurate time and leave tracking,
+              project progress, budget utilization, productivity insights, and payroll-ready reports—
+              all from a single platform.
             </p>
 
             <ul className="stats-points">
               <li><span className="dot yellow"></span>99.9% Reliable Platform</li>
-              <li><span className="dot blue"></span>100%  Precise Time Data </li>
+              <li><span className="dot blue"></span>100% Precise Time Data</li>
               <li><span className="dot green"></span>Configurable for Complex Industry Requirements</li>
             </ul>
           </div>
 
-          {/* RIGHT CARD */}
-          <div className="stats-card">
+          {/* RIGHT IMAGE */}
+          <div className="stats-image-wrapper">
             <img
-              src="/images/graph.png"
-              alt="Analytics Graph"
+              src="/images/time1.png"
+              alt="Timesheet Preview"
             />
-            <span className="card-label">
-              Adoption & Accuracy Trend (last quarters)
-            </span>
           </div>
 
         </div>
       </section>
+
 
 
 
@@ -198,58 +202,63 @@ export default function Home() {
 
       <section className="why-dark">
         <div className="container why-grid">
-          {/* LEFT VISUAL CARD */}
-          <div className="brand-card">
-            <span className="stat stat-top">
-              99.9%<small>Uptime</small>
-            </span>
-            <img src="images/Logo.png" alt="NickName InfoTech" />
 
-            <span className="stat stat-bottom">
-              100%<small>Accurate Tracking</small>
-            </span>
-            {/* GLOW SHAPES */}
-            <span className="glow yellow" />
-            <span className="glow blue" />
-            <span className="glow green" />
+          {/* LEFT IMAGE */}
+          <div className="why-image">
+            <img
+              src="/images/time2.png"
+              alt="Productivity Dashboard"
+            />
           </div>
+
           {/* RIGHT CONTENT */}
           <div className="why-content">
             <h2>
-              Companies Rely on Us <span> for Productivity Made Simple</span>
-
+              Companies Rely on Us
+              <span> for Productivity Made Simple</span>
             </h2>
+
             <p className="subtitle">
-              Manage projects, track budgets, assign tasks, hold employees accountable, generate invoices - all in your language effortlessly.
+              Manage projects, track budgets, assign tasks, hold employees accountable,
+              generate invoices - all in your language effortlessly.
             </p>
+
             <ul className="why-list">
               <li>
-                <span className="icon yellow">⏱</span>
+                <span className="icon red">⏱</span>
                 <div>
                   <h4>Mobile-first, employee-friendly design</h4>
                   <p>
-                    Easy-to-use interface designed for seamless access on any device, keeping employees productive on the go.
+                    Easy-to-use interface designed for seamless access on any device,
+                    keeping employees productive on the go.
                   </p>
                 </div>
               </li>
+
               <li>
-                <span className="icon blue">⚖</span>
+                <span className="icon white">⚖</span>
                 <div>
                   <h4>Secure, cloud-based access</h4>
                   <p>
-                    Reliable cloud platform that ensures your data is safe, accessible anytime, anywhere.
+                    Reliable cloud platform that ensures your data is safe,
+                    accessible anytime, anywhere.
                   </p>
                 </div>
               </li>
+
               <li>
                 <span className="icon green">📊</span>
                 <div>
                   <h4>Track projects, budgets, and performance</h4>
-                  <p>Monitor project progress, budget usage, and team performance in real time for better decision-making.</p>
+                  <p>
+                    Monitor project progress, budget usage, and team performance in real time
+                    for better decision-making.
+                  </p>
                 </div>
               </li>
             </ul>
           </div>
+
         </div>
       </section>
 
@@ -360,23 +369,23 @@ export default function Home() {
             <div className="carousel-track">
 
               <div className="ui-card">
-                <img src="/images/dash-1.png" alt="Dashboard UI 1" />
+                <img src="/images/dash1.png" alt="Dashboard UI 1" />
               </div>
 
               <div className="ui-card">
-                <img src="/images/dash-2.webp" alt="Dashboard UI 2" />
+                <img src="/images/dash2.png" alt="Dashboard UI 2" />
               </div>
 
               <div className="ui-card">
-                <img src="/images/dash-3.webp" alt="Dashboard UI 3" />
+                <img src="/images/dash3.png" alt="Dashboard UI 3" />
               </div>
 
               <div className="ui-card">
-                <img src="/images/dash-3.webp" alt="Dashboard UI 3" />
+                <img src="/images/dash4.png" alt="Dashboard UI 4" />
               </div>
 
               <div className="ui-card">
-                <img src="/images/dash-3.webp" alt="Dashboard UI 3" />
+                <img src="/images/dash5.png" alt="Dashboard UI 5" />
               </div>
 
             </div>
@@ -422,13 +431,16 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* CENTER – PHONE */}
+            {/* CENTER – SINGLE LARGE PHONE */}
             <div className="mass-phone">
               <img
-                src="/images/mobile-2.webp"
-                alt="NickName Time Sheet App"
+                src="/images/mob1.png"
+                alt="Role Management App"
+                className="main-phone"
               />
             </div>
+
+
 
             {/* RIGHT – MANAGER */}
             <div className="mass-card manager">
@@ -496,7 +508,7 @@ export default function Home() {
             {/* RIGHT – VISUAL */}
             <div className="security-plexify-visual">
               <img
-                src="/images/security.webp"
+                src="/images/secure.png"
                 alt="Security Dashboard"
                 className="security-dashboard"
               />
@@ -555,7 +567,7 @@ export default function Home() {
 
 
 
-          {/* LOGO MARQUEE */}
+          {/* LOGO MARQUEE
           <div className="logo-marquee">
             <div className="logo-track">
               <img src="/images/Logo.png" />
@@ -565,12 +577,12 @@ export default function Home() {
               <img src="/images/Logo.png" />
               <img src="/images/Logo.png" />
 
-              {/* repeat for smooth loop */}
+              repeat for smooth loop
               <img src="/images/Logo.png" />
               <img src="/images/Logo.png" />
               <img src="/images/Logo.png" />
             </div>
-          </div>
+          </div> */}
 
           {/* TRUST METRICS */}
           <div className="trust-metrics">
@@ -756,74 +768,100 @@ export default function Home() {
 
 
       {/* FOOTER */}
-      <footer className="pro-footer">
+      <footer className="footer-dark">
+        <div className="container">
+          <div className="footer-cert">
+            <p>Choose Privacy. Choose NickName.</p>
 
-        {/* TOP BAR */}
-        <div className="footer-top">
-          <div className="container footer-top-inner">
-            <a href="mailto:support@nicknameinfotech.com" className="footer-mail">
-              business@nicknameinfotech.com
-            </a>
-
-            <div className="footer-socials">
-              <a href="#"><i className="fab fa-facebook-f" /></a>
-              <a href="#"><i className="fab fa-x-twitter" /></a>
-              <a href="#"><i className="fab fa-linkedin-in" /></a>
-              <a href="#"><i className="fab fa-youtube" /></a>
-              <a href="#"><i className="fab fa-instagram" /></a>
+            <div className="cert-row">
+              <img src="/images/Logo.png" alt="Certification" />
+              <img src="/images/Logo.png" alt="Certification" />
+              <img src="/images/Logo.png" alt="Certification" />
+              <img src="/images/Logo.png" alt="Certification" />
+              <img src="/images/Logo.png" alt="Certification" />
             </div>
           </div>
-        </div>
 
-        {/* CERTIFICATIONS */}
-        <div className="footer-cert">
-          <p>Choose Privacy. Choose NickName.</p>
 
-          <div className="cert-row">
-            <img src="/images/Logo.png" />
-            <img src="/images/Logo.png" />
-            <img src="/images/Logo.png" />
-            <img src="/images/Logo.png" />
-            <img src="/images/Logo.png" />
+          <div className="footer-grid">
+
+            {/* COLUMN 1 – BRAND */}
+            <div className="footer-brand">
+              <h3 className="footer-logo">
+                NickName <span>InfoTech</span>
+              </h3>
+              <p>
+                Smart workforce management platform built for productivity,
+                transparency, and enterprise-level security.
+              </p>
+
+              <div className="social-icons">
+                <a href="#"><i className="fab fa-facebook-f"></i></a>
+                <a href="#"><i className="fab fa-x-twitter"></i></a>
+                <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                <a href="#"><i className="fab fa-instagram"></i></a>
+              </div>
+            </div>
+
+            {/* COLUMN 2 – PRODUCT */}
+            <div>
+              <h5>Product</h5>
+              <ul>
+                <li><a href="#">Time Tracking</a></li>
+                <li><a href="#">Project Management</a></li>
+                <li><a href="#">Payroll Reports</a></li>
+                <li><a href="#">Mobile App</a></li>
+              </ul>
+            </div>
+
+            {/* COLUMN 3 – COMPANY */}
+            <div>
+              <h5>Company</h5>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Compliance</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            {/* COLUMN 4 – NEWSLETTER */}
+            <div>
+              <h5>Stay Updated</h5>
+              <p>Subscribe for updates & product news.</p>
+              <div className="newsletter">
+                <input type="email" placeholder="Enter your email" />
+                <button>Subscribe</button>
+              </div>
+            </div>
+
           </div>
-        </div>
+          {/* CERTIFICATIONS */}
+          <div className="footer-cert">
+            <p>Choose Privacy. Choose NickName.</p>
 
-        {/* SEARCH */}
-        <div className="footer-search">
-          <div className="container search-wrap">
-            <input
-              type="text"
-              placeholder="Search product details, FAQs, and more..."
-            />
-            <button>🔍</button>
-
-            <div className="lang-select">
-              🌐 English ▾
+            <div className="cert-row">
+              <img src="/images/Logo.png" />
+              <img src="/images/Logo.png" />
+              <img src="/images/Logo.png" />
+              <img src="/images/Logo.png" />
+              <img src="/images/Logo.png" />
             </div>
           </div>
-        </div>
 
-        {/* LINKS */}
-        <div className="footer-links">
-          <div className="container">
-            <a>Contact Us</a>
-            <a>Security</a>
-            <a>Compliance</a>
-            <a>IPR Complaints</a>
-            <a>Anti-Spam Policy</a>
-            <a>Terms of Service</a>
-            <a>Privacy Policy</a>
-            <a>Cookie Policy</a>
-            <a>GDPR Compliance</a>
+          <div className="footer-bottom">
+            <p>© 2026 NickName InfoTech. All rights reserved.</p>
           </div>
-        </div>
 
-        {/* COPYRIGHT */}
-        <div className="footer-bottom">
-          © 2026 NickName InfoTech. All rights reserved.
-        </div>
+          {/* Glow Effects */}
+          <span className="footer-glow blue"></span>
+          <span className="footer-glow green"></span>
 
+        </div>
       </footer>
+
+
+
 
 
 
