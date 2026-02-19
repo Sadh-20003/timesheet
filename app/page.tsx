@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
+import { useState } from "react";
+
 
 import { features } from "process";
 
@@ -11,6 +13,9 @@ import { features } from "process";
 
 
 export default function Home() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     const track = document.querySelector(".carousel-track") as HTMLElement | null;
     const nextBtn = document.querySelector(".nav.next");
@@ -68,42 +73,39 @@ export default function Home() {
 
       {/* NAVBAR */}
       <nav className="main-navbar">
-        <div className="nav-inner">
+        <div className="nav-container">
 
-          {/* Logo */}
           <div className="nav-logo">
-            <img
-              src="/images/Logo.png"
-              alt="NickName InfoTech"
-              className="logo"
-
-            />
-
+            <img src="/images/Logo.png" alt="NickName InfoTech" />
           </div>
 
-          {/* Menu */}
-          <ul className="nav-links">
+          {/* LINKS */}
+          <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
             <li>Home</li>
             <li>Product</li>
             <li>Features</li>
-            <li> Industries</li>
-            <li> Security</li>
-            <li> Pricing</li>
-            <li> Company</li>
-            <li> Contact</li>
-            <li className="dropdown">
-
-            </li>
+            <li>Industries</li>
+            <li>Security</li>
+            <li>Pricing</li>
+            <li>Company</li>
+            <li>Contact</li>
           </ul>
 
-          {/* Actions */}
           <div className="nav-actions">
-            <button className="btn ghost">Sign In</button>
-            <button className="btn primary">Register</button>
+            <button className="btn-ghost">Sign In</button>
+            <button className="btn-primary">Register</button>
+          </div>
+
+          {/* HAMBURGER */}
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+            ☰
           </div>
 
         </div>
       </nav>
+
+
+
 
 
       {/* {Hero sectio} */}
@@ -770,17 +772,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="footer-dark">
         <div className="container">
-          <div className="footer-cert">
-            <p>Choose Privacy. Choose NickName.</p>
 
-            <div className="cert-row">
-              <img src="/images/Logo.png" alt="Certification" />
-              <img src="/images/Logo.png" alt="Certification" />
-              <img src="/images/Logo.png" alt="Certification" />
-              <img src="/images/Logo.png" alt="Certification" />
-              <img src="/images/Logo.png" alt="Certification" />
-            </div>
-          </div>
 
 
           <div className="footer-grid">
@@ -837,17 +829,7 @@ export default function Home() {
 
           </div>
           {/* CERTIFICATIONS */}
-          <div className="footer-cert">
-            <p>Choose Privacy. Choose NickName.</p>
 
-            <div className="cert-row">
-              <img src="/images/Logo.png" />
-              <img src="/images/Logo.png" />
-              <img src="/images/Logo.png" />
-              <img src="/images/Logo.png" />
-              <img src="/images/Logo.png" />
-            </div>
-          </div>
 
           <div className="footer-bottom">
             <p>© 2026 NickName InfoTech. All rights reserved.</p>
